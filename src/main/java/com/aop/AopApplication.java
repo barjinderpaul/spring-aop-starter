@@ -17,6 +17,8 @@ public class AopApplication {
         AccountDao accountDao = ctx.getBean("accountDao",AccountDao.class);
 
         accountDao.addAccount();
+        accountDao.addUser("Mount");
+        accountDao.throwingException();
 
         ctx.close();
 

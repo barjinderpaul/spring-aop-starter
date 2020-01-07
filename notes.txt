@@ -29,7 +29,7 @@ Original AOP implementation is provided by AspectJ (feature rich).
 Terminologies in AOP :
 1. Aspect : Module of code for cross cutting concern (logging, security, transaction code)
 2. JoinPoint : It is any point in your program such as method execution, exception handling, field access etc
-3. Advice represents an action taken by an aspect at a particular join point.
+3. Advice : represents an action taken by an aspect at a particular join point.
 4. Pointcut : A predicate expression for where advice should be applied.
 
 
