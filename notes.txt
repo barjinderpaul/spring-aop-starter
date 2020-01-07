@@ -1,0 +1,42 @@
+What is AOP ?
+AOP : Aspect Oriented Programming
+
+based on an aspect :
+encapsulates cross cutting concern (cross cutting logic) (some infrastructure code which is needed everywhere)
+
+
+Why AOP ?
+* Provides programmable way to dynamically add code before, after , .. around the main logic.
+* Aids in open-closed SOLID principle.
+* Promotes code reuse and easier to change.
+* Business/Service layer code is only business/service layer regarding code and no other infrastructure     code.
+
+
+Some use cases :
+1. javatpoint
+2. Audit logging (Who, What, When, Where)
+3. Exception handling (Log exception, if it occurs anywhere in the application and notify the appropriate   person.
+4. API management : How many times a method has been called by a user (helps in limiting calls to specific  methods in a day.)
+
+
+Spring also uses AOP :
+Security, Transactions (@Transactional) and Caching as well.
+
+Original AOP implementation is provided by AspectJ (feature rich).
+
+
+
+Terminologies in AOP :
+1. Aspect : Module of code for cross cutting concern (logging, security, transaction code)
+2. JoinPoint : It is any point in your program such as method execution, exception handling, field access etc
+3. Advice represents an action taken by an aspect at a particular join point.
+4. Pointcut : A predicate expression for where advice should be applied.
+
+
+
+Advice types : Runs everytime whenever the respective method is called.
+1. Before Advice: it executes before a join point.
+2. After Returning Advice: it executes after a joint point completes normally.
+3. After Throwing Advice: it executes if method exits by throwing an exception.
+4. After Advice: it executes after a join point regardless of join point exit whether normally or  exceptional return.
+5. Around Advice: It executes before and after a join point.
