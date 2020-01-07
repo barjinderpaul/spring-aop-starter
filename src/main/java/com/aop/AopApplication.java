@@ -18,7 +18,8 @@ public class AopApplication {
 
         accountDao.addAccount();
         accountDao.addUser("Mount");
-        accountDao.throwingException();
+        accountDao.returningSomething();
+//        accountDao.throwingException();
 
         ctx.close();
 

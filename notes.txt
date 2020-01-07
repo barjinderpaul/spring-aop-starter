@@ -2,29 +2,27 @@ What is AOP ?
 AOP : Aspect Oriented Programming
 
 based on an aspect :
-encapsulates cross cutting concern (cross cutting logic) (some infrastructure code which is needed everywhere)
+encapsulates cross cutting concern (cross cutting logic) (some infrastructure code which is needed everywhere) (logging, security)
 
 
 Why AOP ?
 * Provides programmable way to dynamically add code before, after , .. around the main logic.
 * Aids in open-closed SOLID principle.
 * Promotes code reuse and easier to change.
-* Business/Service layer code is only business/service layer regarding code and no other infrastructure     code.
+* Business/Service layer code is only business/service layer regarding code and no other infrastructure code.
 
 
 Some use cases :
-1. javatpoint
-2. Audit logging (Who, What, When, Where)
-3. Exception handling (Log exception, if it occurs anywhere in the application and notify the appropriate   person.
-4. API management : How many times a method has been called by a user (helps in limiting calls to specific  methods in a day.)
+1. Audit logging (Who, What, When, Where)
+2. Exception handling (Log exception, if it occurs anywhere in the application and notify the appropriate person.
+3. API management : How many times a method has been called by a user (helps in limiting calls to specific methods in a day.)
+
 
 
 Spring also uses AOP :
 Security, Transactions (@Transactional) and Caching as well.
 
 Original AOP implementation is provided by AspectJ (feature rich).
-
-
 
 Terminologies in AOP :
 1. Aspect : Module of code for cross cutting concern (logging, security, transaction code)
